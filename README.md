@@ -3,11 +3,11 @@ Android-labra - BeerHugger
 
 Android-ohjelmoinnin harjoitustyö
 
+Android-sovellus joka hakee lähimpien baarien nimet, sijainnit ja etäisyydet osoitteesta m.olutnorsu.fi.
+
 PLAN A:
-Andorid-sovellus, jolla löytää lähimmän baarin kartalta. 
-Tiedot haetaan ulkopuoliselta palvelimelta, joka tarjoilee dataa sopivassa muodossa.
+Baarit listataan allekkain painettavina itemeinä. Itemiä painamalla näkyy baarin tarkemmat tiedot ja/tai sijainti kartalla.
 
 
 PLAN B:
-Jos karttasovellus osoittautuu liian hankalaksi, täytyy tyytyä ainoastaan kirjanpitosovellukseen.
-Sovellukseen voi syöttää baarin nimen aina kun sinne astuu sisään, ja jälkikäteen tietää sitten käyneensä.
+Jos karttaa ei saada ympättyä mukaan, tyydytään vain baarien listaamiseen. Ehkä myös haetaan baarin tiedot palvelimelta.
