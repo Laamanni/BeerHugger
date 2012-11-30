@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 
 import android.app.Activity;
@@ -40,9 +43,25 @@ public class MainActivity extends Activity {
     // Before attempting to fetch the URL, makes sure that there is a network connection.
     public void myClickHandler(View view) {
         // Gets the URL from the UI's text field.
-        String stringUrl = urlText.getText().toString();
-        // Add baseurl to the url being fetched.
-        stringUrl = baseUrl+stringUrl;
+    	String stringUrl = urlText.getText().toString();
+    	
+    	URI uri = null;
+    	URL url = null;
+		try {
+			uri = new URI(baseUrl, stringUrl, "");
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	try {
+			url = uri.toURL();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        // Convert url to string.
+        stringUrl = url.toString();
         
         ConnectivityManager connMgr = (ConnectivityManager) 
             getSystemService(Context.CONNECTIVITY_SERVICE);
