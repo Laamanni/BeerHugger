@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
 	private static final String DEBUG_TAG = "HttpExample";
     private EditText urlText;
     private TextView textView;
+    private String baseUrl = "http://m.olutnorsu.fi/data.php?haku=";
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,9 @@ public class MainActivity extends Activity {
     public void myClickHandler(View view) {
         // Gets the URL from the UI's text field.
         String stringUrl = urlText.getText().toString();
+        // Add baseurl to the url being fetched.
+        stringUrl = baseUrl+stringUrl;
+        
         ConnectivityManager connMgr = (ConnectivityManager) 
             getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
