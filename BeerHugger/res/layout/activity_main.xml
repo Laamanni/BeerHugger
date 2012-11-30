@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <EditText
+        android:id="@+id/myUrl"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:hint="@string/edit_text"
+        android:imeOptions="actionDone"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/myUrl"
+        android:onClick="myClickHandler"
+        android:scrollHorizontally="true"
+        android:text="@string/button_send" />
+    
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myUrl"
+        android:hint="@string/myText" />
+
+</RelativeLayout>
