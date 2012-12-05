@@ -1,10 +1,10 @@
 <resources>
 
     <string name="app_name">BeerHugger</string>
-    <string name="edit_text">Enter a location</string>
+    <string name="edit_text">Syötä osoite</string>
     <string name="button_send">Hae</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Baarihaku</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_diplay_message">My Message</string>
     <string name="myText">Nothing to show!</string>
