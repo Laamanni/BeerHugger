@@ -7,6 +7,6 @@
     <string name="title_activity_main">Baarihaku</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_diplay_message">My Message</string>
-    <string name="myText">Nothing to show!</string>
+    <string name="myText">Syötä osoite tai koordinaatit, esim. <b>Vaasankatu 2</b> tai 60.18572, 24.95065. Jos jätät hakukentän tyhjäksi, yritetään käyttää GPS-sijaintia. \n\nPalvelu palauttaa kymmenen lähintä baaria, etäisyydet niihin sekä ilmansuunnan. \n\nVoit myös hakea lisätietoja baarista syöttämällä pelkän numeron ilman risuaitaa, esim. 417.</string>
 
 </resources>

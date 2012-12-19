@@ -20,6 +20,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -110,7 +111,7 @@ public class MainActivity extends Activity {
         }
         // onPostExecute displays the results of the AsyncTask.
         protected void onPostExecute(String result) {
-            textView.setText(result);
+            textView.setText(Html.fromHtml(result));
        }
 
     }
@@ -152,7 +153,7 @@ public class MainActivity extends Activity {
   	// Reads an InputStream and converts it to a String.
   	 public String readIt(InputStream stream, int len) throws IOException, UnsupportedEncodingException {
   	     Reader reader = null;
-  	     reader = new InputStreamReader(stream, "UTF-8");        
+  	     reader = new InputStreamReader(stream, "ISO-8859-10");        
   	     char[] buffer = new char[len];
   	     reader.read(buffer);
   	     return new String(buffer);
